@@ -11,9 +11,7 @@
     <main>
       <div id="rounds-container">
         Round <span id="current-round"></span>
-        <span id="rounds">
-          of <span id="total-rounds"></span>
-        </span>
+        <span id="rounds"> of <span id="total-rounds"></span> </span>
         <div id="score"></div>
       </div>
       <video id="video-0" src="videos/3l.mp4" preload="auto" controls></video>
@@ -30,35 +28,55 @@
           <div id="form-container">
             <label class="form-label">
               <input type="radio" name="frame" value="0" />
-              3rd left <span class="frame-indication">3 frames early</span>
+              <span id="answer-0" class="answer-label">
+                3rd left
+                <span class="frame-indication">3 frames early</span>
+              </span>
             </label>
 
             <label class="form-label">
               <input type="radio" name="frame" value="1" />
-              3rd right <span class="frame-indication">2 frames early</span>
+              <span id="answer-1" class="answer-label">
+                3rd right
+                <span class="frame-indication">2 frames early</span>
+              </span>
             </label>
 
             <label class="form-label">
               <input type="radio" name="frame" value="2" />
-              4th left <span class="frame-indication">1 frame early</span>
+              <span id="answer-2" class="answer-label">
+                4th left
+                <span class="frame-indication">1 frame early</span>
+              </span>
             </label>
 
             <label class="form-label">
               <input type="radio" name="frame" value="3" />
-              4th right <span class="frame-indication">good frame!</span>
+              <span id="answer-3" class="answer-label">
+                4th right
+                <span class="frame-indication">good frame!</span>
+              </span>
             </label>
 
             <label class="form-label">
               <input type="radio" name="frame" value="4" />
-              5th left <span class="frame-indication">1 frame late</span>
+              <span id="answer-4" class="answer-label">
+                5th left
+                <span class="frame-indication">1 frame late</span>
+              </span>
             </label>
 
             <label class="form-label">
               <input type="radio" name="frame" value="5" />
-              5th right <span class="frame-indication">2 frames late</span>
+              <span id="answer-5" class="answer-label">
+                5th right
+                <span class="frame-indication">2 frames late</span>
+              </span>
             </label>
           </div>
-          <button id="submit-btn" type="submit">Check your answer</button>
+          <button id="submit-btn" type="submit" class="check-answer">
+            Check your answer
+          </button>
         </form>
       </div>
     </main>
