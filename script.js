@@ -37,7 +37,7 @@ function handleSubmit(e) {
   const formData = new FormData(form);
   const answer = parseInt(formData.get("frame"));
 
-  if (answer != null) {
+  if (!isNaN(answer)) {
     if (answer === randomIndex) {
       score++;
       scoreElem.innerHTML = `Answered correctly ${score} ${
