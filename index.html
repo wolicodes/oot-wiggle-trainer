@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiggle trainer</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="rounds-container">
+        Round <span id="current-round"></span>
+        <span id="rounds">
+          of <span id="total-rounds"></span>
+        </span>
+        <div id="score"></div>
+      </div>
+      <video id="video-0" src="videos/3l.mp4" preload="auto" controls></video>
+      <video id="video-1" src="videos/3r.mp4" preload="auto" controls></video>
+      <video id="video-2" src="videos/4l.mp4" preload="auto" controls></video>
+      <video id="video-3" src="videos/4r.mp4" preload="auto" controls></video>
+      <video id="video-4" src="videos/5l.mp4" preload="auto" controls></video>
+      <video id="video-5" src="videos/5r.mp4" preload="auto" controls></video>
+      <div id="question">
+        <h2 id="title">
+          Can you tell which wiggle the pause button was pressed on?
+        </h2>
+        <form id="answer-form" onsubmit="handleSubmit(event)">
+          <div id="form-container">
+            <label class="form-label">
+              <input type="radio" name="frame" value="0" />
+              3rd left <span class="frame-indication">3 frames early</span>
+            </label>
+
+            <label class="form-label">
+              <input type="radio" name="frame" value="1" />
+              3rd right <span class="frame-indication">2 frames early</span>
+            </label>
+
+            <label class="form-label">
+              <input type="radio" name="frame" value="2" />
+              4th left <span class="frame-indication">1 frame early</span>
+            </label>
+
+            <label class="form-label">
+              <input type="radio" name="frame" value="3" />
+              4th right <span class="frame-indication">good frame!</span>
+            </label>
+
+            <label class="form-label">
+              <input type="radio" name="frame" value="4" />
+              5th left <span class="frame-indication">1 frame late</span>
+            </label>
+
+            <label class="form-label">
+              <input type="radio" name="frame" value="5" />
+              5th right <span class="frame-indication">2 frames late</span>
+            </label>
+          </div>
+          <button id="submit-btn" type="submit">Check your answer</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
