@@ -97,19 +97,33 @@ video {
 #submit-btn {
   padding: 8px;
   border-radius: 16px;
-  color: var(--c-button);
-  border: 1px solid var(--c-button);
   font-size: 1.5rem;
-  background-color: transparent;
   width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
 #submit-btn:hover {
   cursor: pointer;
+}
+
+.check-answer {
+  color: var(--c-button);
+  border: 1px solid var(--c-button);
+  background-color: transparent;
+}
+
+.check-answer:hover {
   background-color: var(--c-button);
   color: white;
+}
+
+.next-slide {
+  background-color: green;
+  border: none;
+  color: white;
+}
+
+.next-slide:hover {
+  opacity: 0.8;
 }
 
 .form-label {
